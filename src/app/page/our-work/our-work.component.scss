@@ -1,0 +1,38 @@
+.sec_work h2 {
+    font-size: 5rem;
+}
+
+.sec_work h3 {
+    font-size: 3rem;
+    line-height: 25px;
+}
+
+.sec_work .line_ {
+    margin-top: 17px;
+    width: 14%;
+    height: 2px;
+}
+
+.sec_work .box_ {
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+.sec_work .nav_box {
+    border: 2px solid #8b725e;
+}
+
+.sec_work .nav_box a {
+    font-size: 15px;
+    color: #8b725e !important;
+    text-decoration: none;
+}
+
+.sec_work .nav_box.uk-active {
+    background-color: #8b725e !important;
+}
+
+.sec_work .nav_box.uk-active a {
+    color: #eba771 !important;
+}

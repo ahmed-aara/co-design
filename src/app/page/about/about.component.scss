@@ -1,0 +1,29 @@
+.sec_about {
+    height: 100vh;
+}
+
+.sec_about h2 {
+    font-size: 4rem;
+}
+
+.sec_about h3 {
+    font-size: 3rem;
+    line-height: 25px;
+}
+
+.sec_about .uk-width-1-2 {
+    width: 45% !important;
+}
+
+.sec_about .bg_ {
+    position: relative;
+    overflow: hidden;
+}
+
+.sec_about .bg_ img {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

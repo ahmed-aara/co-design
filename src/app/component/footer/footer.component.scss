@@ -1,0 +1,45 @@
+footer {
+    background-color: #8B725E;
+}
+
+footer .line_ {
+    background-color: #EBA771;
+    width: 70%;
+    height: 2px;
+}
+
+footer .head_ .line_ {
+    background-color: #EBA771;
+    width: 15%;
+    height: 2px;
+}
+
+footer .links_ a {
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer .links_ a::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 3px;
+    background-color: #EBA771;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+footer .links_ a:hover::before {
+    width: 10px;
+    margin-right: 30px;
+}
+
+footer .social_ h3 {
+    letter-spacing: 7px;
+}
+
+footer .social_ a {
+    display: inline-block;
+    width: 40px;
+}

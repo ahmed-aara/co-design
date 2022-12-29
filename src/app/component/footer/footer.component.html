@@ -1,0 +1,78 @@
+<footer>
+
+    <div class="uk-container py-4">
+
+        <div class="uk-grid-small uk-child-width-1-2@l" uk-grid>
+
+            <div>
+
+                <img width="25%" src="assets/img/logo.svg" alt="">
+                <h4 class="whiteC_ mt-3 f_Light uk-width-2-3">Our work have the traditional taste with contemporary
+                    modern touch, thus we possess a timeless style generating broad market appeal.</h4>
+                <div class="line_ my-3"></div>
+
+                <div class="uk-grid-small uk-child-width-1-1@l" uk-grid>
+
+                    <div *ngFor="let item of contactArr" class="">
+
+                        <div class="uk-grid-small uk-flex uk-flex-middle" uk-grid>
+
+                            <div class="uk-width-auto">
+                                <div style="width: 25px;">
+                                    <img width="100%" [src]="'assets/img/vector/' + item.type +'.svg'" alt="">
+                                </div>
+                            </div>
+
+                            <div class="uk-width-expand">
+                                <p class="whiteC_">{{item.value}}</p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <h5 class="f_Bold lightbrownC_">{{ '© ' + year + ' ' + 'AG Co Design. All rights reserved'}}
+                        </h5>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h2 class="whiteC_ f_Bold">Quicks Links</h2>
+
+                <div class="uk-grid-small uk-child-width-1-1@l links_ mt-2" uk-grid>
+                    <div *ngFor="let item of pagesArr">
+                        <a routerLink="{{item.link}}" class="whiteC_ f_Light">{{item.name}}</a>
+                    </div>
+                </div>
+
+                <div class="social_ mt-3">
+                    <h3 class="whiteC_ f_Light">GET IN TOUCH</h3>
+                    <p class="whiteC_ f_Medium">Follow us now and get our last updates</p>
+
+                    <div class="uk-grid-small uk-child-width-auto mt-1" uk-grid>
+
+                        <div *ngFor="let item of social_links">
+                            <a target="_blank" [href]="item"><img width="100%" [src]="(item | include: 'facebook') ? 'assets/img/vector/facebook.svg': '' ||
+                                (item | include: 'instagram') ? 'assets/img/vector/instagram.svg': '' ||
+                                (item | include: 'linkedin') ? 'assets/img/vector/linkedin.svg': '' ||
+                                (item | include: 'twitter') ? 'assets/img/vector/twitter.svg': '' ||
+                                (item | include: 'wa.me') ? 'assets/img/vector/whatsapp.svg': ''  " alt=""></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>

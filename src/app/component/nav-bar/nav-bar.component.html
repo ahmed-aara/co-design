@@ -1,0 +1,88 @@
+<div *ngIf="option" class="nav_">
+
+    <div class="web_nav">
+
+        <div class="uk-container">
+            <nav class="" uk-navbar>
+
+                <div class="uk-navbar-left logo_ full_h">
+                    <div class="full_w full_h uk-flex uk-flex-center uk-flex-middle">
+                        <a routerLink="/">
+                            <img width="100%" src="assets/img/logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="uk-navbar-right">
+
+                    <ul class="uk-navbar-nav full_h">
+
+                        <li *ngFor="let item of pagesArr"><a class="px-3 f_SemiBold lightbrownC_" [routerLinkActiveOptions]="{exact: true}"
+                                routerLinkActive="uk-active" routerLink="{{item.link}}">{{item.name}}</a></li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+        </div>
+
+    </div>
+
+    <div class="mobile_nav">
+
+        <div class="uk-container">
+            <nav class="uk-navbar-container" uk-navbar>
+
+                <div class="uk-navbar-left logo_ full_h">
+                    <div class="full_w full_h uk-flex uk-flex-center uk-flex-middle">
+                        <a routerLink="/">
+                            <img width="100%" src="assets/img/logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="uk-navbar-right">
+
+                    <ul class="uk-navbar-nav full_h">
+
+                        <li class="px-1">
+                            <a uk-toggle="target: #offcanvas-menu" href="#">
+                                <div style="width: 30px;">
+                                    <img width="100%" src="assets/img/menu.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="offcanvas-menu" uk-offcanvas="mode: slide; overlay: true;flip: true">
+    <div class="uk-offcanvas-bar whiteBG_">
+
+        <button class="uk-offcanvas-close blackC_" type="button" uk-close></button>
+
+        <div  class="body_">
+            <h2 class="f_Light mb-2">Menu</h2>
+
+            <div class="line_ full_w my-3"></div>
+
+            <div class="uk-grid-small uk-child-width-1-1@l links_ mt-3" uk-grid>
+                <div *ngFor="let item of pagesArr">
+                    <a routerLink="{{item.link}}" (click)="closeOffcanvas('offcanvas-menu')"
+                        class="f_Light">{{item.name}}</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

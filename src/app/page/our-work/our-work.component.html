@@ -1,0 +1,62 @@
+<section class="sec_work py-4">
+
+    <div class="uk-container">
+
+        <h2 class="f_PlayfairDisplay_ExtraBold darkbrownC_">Our Work</h2>
+        <h3 class="f_PlayfairDisplay_ExtraBold lightbrownC_">Perfect & Amazing Work</h3>
+        <div class="lightbrownBG_ line_ mb-3"></div>
+
+        <div class="uk-grid-medium" uk-grid uk-filter="target: .js-filter">
+
+            <div class="uk-width-1-4">
+
+                <div sticky_ class="py-2 px-1 box_">
+
+                    <div class="uk-grid-small uk-child-width-1-1@l" uk-grid="masonry: true">
+
+                        <div>
+                            <div class="uk-active nav_box text-center p-1 cursor" uk-filter-control><a
+                                    class="f_SemiBold" href="#">All</a></div>
+                        </div>
+
+                        <div *ngFor="let item of placeArr">
+                            <div class="nav_box text-center p-1 cursor"
+                                attr.uk-filter-control="[data-color='{{item.value}}']"><a class="f_SemiBold"
+                                    href="#">{{item.name}}</a></div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="uk-width-expand">
+
+                <div class="py-2">
+
+                    <div class="js-filter uk-grid-small uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-lightbox="animation: slide">
+
+                        <div *ngFor="let item of workArr" attr.data-color="{{item.value}}">
+
+                            <div class="bg_" >
+                                <a [href]="'assets/img/work/' + item.value + '/' + item.img">
+                                    <img [src]="'assets/img/work/' + item.value + '/' + item.img" alt="">
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
