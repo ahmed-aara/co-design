@@ -49,13 +49,6 @@ export class OurWorkComponent implements OnInit {
     for (let x = 1; x <= 24; x++) this.workArr.push({ img: `${x}.jpg`, value: 'bosnian-village' })
     for (let x = 1; x <= 4; x++) this.workArr.push({ img: `${x}.jpg`, value: 'blenz-cafe' })
     for (let x = 1; x <= 16; x++) this.workArr.push({ img: `${x}.jpg`, value: 'animal-care' })
-
-
-
-
-
-
-
   }
 
 }

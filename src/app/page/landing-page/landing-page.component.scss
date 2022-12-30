@@ -5,17 +5,12 @@
 }
 
 .sec_1 .img {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    position: absolute;
     overflow: hidden;
-    position: relative;
 }
 
 .sec_1 .img img {
     position: absolute;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -23,17 +18,16 @@
 .sec_1 .img .black-screen {
     position: absolute;
     top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba($color: #45270f, $alpha: 0.5);
-    // background-image: linear-gradient()
+    background: linear-gradient(
+        90deg,
+        rgba($color: #45270f, $alpha: 0.8) 0%,
+        rgba($color: #45270f, $alpha: 0.5) 50%,
+        rgba($color: #45270f, $alpha: 0) 100%
+    );
 }
 
 .sec_1 .uk-container {
-    position: absolute;
-    top: 0%;
-    left: 0%;
+    position: relative;
 }
 
 .sec_1 .uk-container .caption {
@@ -115,4 +109,89 @@
 
 .sec_3 .placeholder_height {
     height: 100vh;
+}
+
+//sec_4
+.sec_4 {
+    position: relative;
+    height: 75vh;
+}
+
+.sec_4 .img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.sec_4 .img img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.sec_4 .img .balck_screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #8b725e, $alpha: 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.sec_4 .caption .img {
+    width: 33%;
+}
+
+.sec_4 .caption .img img {
+    width: 100%;
+}
+
+.sec_4 .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sec_4 .caption .info-caption h2 {
+    letter-spacing: 12px;
+}
+
+//sec_5
+.sec_5 .header_ p {
+    font-size: 2.7rem;
+    line-height: 50px;
+}
+
+.sec_5 .header_ .line_ {
+    width: 10%;
+    height: 2px;
+}
+
+.sec_5 .nav_box {
+    border: 2px solid #8b725e;
+}
+
+.sec_5 .nav_box a {
+    font-size: 15px;
+    color: #8b725e !important;
+    text-decoration: none;
+}
+
+.sec_5 .nav_box.uk-active {
+    background-color: #8b725e !important;
+}
+
+.sec_5 .nav_box.uk-active a {
+    color: #eba771 !important;
+}
+
+.sec_5 .bg_ img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
 }
