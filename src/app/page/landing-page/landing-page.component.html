@@ -1,28 +1,72 @@
-<section class="sec_1">
+<div class="uk-position-relative">
 
-    <div class="img full_w full_h">
-        <img class="full_w full_h" src="../../../assets/img/bg_.png" alt="">
-        <div class="black-screen full_w full_h"></div>
-    </div>
+    <section class="sec_1">
 
-    <div class="uk-container full_w full_h">
-        <div class="caption uk-flex uk-flex-middle">
+        <div class="bg_ full_w full_h">
+            <img class="full_w full_h" src="assets/img/bg_.png" alt="">
+            <div class="black_screen full_w full_h"></div>
+        </div>
 
-            <div>
+        <div class="uk-container full_w full_h">
 
-                <h2 class="f_PlayfairDisplay_ExtraBold offwhiteC_">Bring</h2>
-                <h3 class="f_PlayfairDisplay_Bold lightbrownC_">Magic to <br> home</h3>
-                <div class="line offwhiteBG_"></div>
-                <p class="offwhiteC_">Our work have the traditional taste with <br> contemporary modern touch, thus we
-                    possess <br> a timeless style
-                    generating
-                    broad market <br> appeal.</p>
+            <div class="box full_w full_h uk-flex uk-flex-middle">
+
+                <div class="uk-grid-small" uk-grid>
+
+                    <div class="uk-width-1-3@l">
+                        <h2 class="f_PlayfairDisplay_ExtraBold offwhiteC_">Bring</h2>
+                        <h3 class="f_PlayfairDisplay_Bold lightbrownC_">Magic to Home</h3>
+                        <div class="line_ offwhiteBG_ my-1"></div>
+                        <p class="offwhiteC_">Our work have the traditional taste with contemporary modern touch,
+                            thus
+                            we
+                            possess a timeless style
+                            generating
+                            broad market appeal.</p>
+                    </div>
+
+                    <div class="uk-width-expand@l">
+
+                        <div class="full_h uk-flex uk-flex-right uk-flex-bottom">
+                            <a class="btn_a offwhiteBG_ py-2 px-3 f_Light nescafeC_" routerLink="/about">Read More</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
+
+    </section>
+
+    <div class="uk-position-top">
+
+        <div class="uk-container mt-3">
+
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+                <div class="uk-navbar-left">
+                    <a href="#">
+                        <img width="50%" src="assets/img/logo.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="uk-navbar-right">
+                    <a class="text-right" href="#">
+                        <img width="30%" src="./assets/img/menu.svg" alt="">
+                    </a>
+                </div>
+
+            </nav>
+
+        </div>
+
+
     </div>
 
-</section>
+</div>
 
 <section class="sec_2 py-4 uk-flex uk-flex-middle">
 
@@ -32,47 +76,11 @@
 
         <div class="uk-grid-small uk-child-width-1-3@l" uk-grid>
 
-            <div>
+            <div *ngFor="let item of aboutArr">
 
-                <div class="card p-2 nescafeBG_">
-                    <h2 class="offwhiteC_ f_Bold">Office Design</h2>
-                    <p class="offwhiteC_">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum
-                        has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but also.
-                    </p>
-                </div>
-
-            </div>
-
-            <div>
-
-                <div class="card p-2 nescafeBG_">
-                    <h2 class="offwhiteC_ f_Bold">Office Design</h2>
-                    <p class="offwhiteC_">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum
-                        has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but also.
-                    </p>
-                </div>
-
-            </div>
-
-            <div>
-
-                <div class="card p-2 nescafeBG_">
-                    <h2 class="offwhiteC_ f_Bold">Office Design</h2>
-                    <p class="offwhiteC_">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum
-                        has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but also.
-                    </p>
+                <div class="card p-3 nescafeBG_">
+                    <h2 class="offwhiteC_ f_PlayfairDisplay_Bold mb-1">{{item.title}}</h2>
+                    <p class="offwhiteC_">{{item.description}}</p>
                 </div>
 
             </div>
@@ -133,17 +141,17 @@
 
     <div class="uk-width-1-3@l wallpaper_box">
         <div class="bg_ uk-flex uk-flex-middle uk-flex-center">
-            <img class="full_w full_h" src="../../../assets/img/img_service.jpg" alt="" srcset="">
+            <img class="full_w full_h" src="assets/img/img_service.jpg" alt="" srcset="">
             <div class="border_"></div>
         </div>
     </div>
 
 </section>
 
-<section class="sec_4">
+<section class="sec_4 my-4">
 
     <div class="img">
-        <img src="../../../assets/img/info_bg.jpg" alt="">
+        <img src="assets/img/info_bg.jpg" alt="">
         <div class="balck_screen"></div>
     </div>
 
@@ -156,7 +164,7 @@
                 <div>
 
                     <div class="img-caption uk-flex uk-flex-center">
-                        <img width="60%" src="../../../assets/img/img_work.png" alt="">
+                        <img width="60%" src="assets/img/img_work.png" alt="">
                     </div>
 
                 </div>
@@ -164,13 +172,13 @@
                 <div>
 
                     <div class="info-caption">
-                        <h2 class="offwhiteC_">My Website</h2>
+                        <h2 class="offwhiteC_ f_Bold">My Website</h2>
 
-                        <p class="offwhiteC_">Our work have the traditional taste with contemporary <br> modern touch,
-                            thus we possess a timeless style <br>
-                            generating broad market appeal.</p>
+                        <h4 class="whiteC_ f_Light">Our work have the traditional taste with contemporary modern touch,
+                            thus we possess a timeless style
+                            generating broad market appeal.</h4>
 
-                        <button class="offwhiteBG_ py-2 px-3 f_Light nescafeC_ mt-1">Learn More</button>
+                        <a routerLink="/about" class="btn_a offwhiteBG_ py-2 px-3 f_Light nescafeC_ mt-1">Learn More</a>
                     </div>
 
                 </div>
@@ -228,6 +236,12 @@
                 </div>
 
             </div>
+
+        </div>
+
+        <div class="text-center mt-3">
+
+            <a routerLink="/work" class="btn_a nescafeBG_ py-2 px-3 f_Medium lightbrownC_">Learn More</a>
 
         </div>
 

@@ -4,25 +4,25 @@
     height: 100vh;
 }
 
-.sec_1 .img {
+.sec_1 .bg_ {
     position: absolute;
     overflow: hidden;
 }
 
-.sec_1 .img img {
+.sec_1 .bg_ img {
     position: absolute;
     object-fit: cover;
     object-position: center;
 }
 
-.sec_1 .img .black-screen {
+.sec_1 .bg_ .black_screen {
     position: absolute;
     top: 0%;
     background: linear-gradient(
         90deg,
         rgba($color: #45270f, $alpha: 0.8) 0%,
         rgba($color: #45270f, $alpha: 0.5) 50%,
-        rgba($color: #45270f, $alpha: 0) 100%
+        rgba($color: #45270f, $alpha: 0.3) 100%
     );
 }
 
@@ -30,27 +30,30 @@
     position: relative;
 }
 
-.sec_1 .uk-container .caption {
-    width: 100%;
-    height: 100%;
+.sec_1 .content_ {
+    background-color: rebeccapurple;
 }
-
-.sec_1 .caption .line {
-    width: 30%;
+.sec_1 .box .line_ {
+    width: 35%;
     height: 2px;
-    margin: 8px 0;
 }
 
-.sec_1 .caption h2 {
-    font-size: 8rem;
+.sec_1 .box h2 {
+    font-size: 10rem;
+    line-height: 155px;
 }
 
-.sec_1 .caption h3 {
-    font-size: 4rem;
-    line-height: 66px;
+.sec_1 .box h3 {
+    font-size: 5rem;
+    line-height: 70px;
+}
+
+.sec_1 .box p {
+    font-size: 20px;
 }
 
 //sec_2
+
 .sec_2 {
     position: relative;
 }
@@ -63,7 +66,7 @@
     position: absolute;
     left: 0;
     width: 100%;
-    height: 30px;
+    height: 40px;
     background-color: rgba($color: #45270f, $alpha: 0.1);
     z-index: 1;
 }
@@ -114,7 +117,7 @@
 //sec_4
 .sec_4 {
     position: relative;
-    height: 75vh;
+    height: 70vh;
 }
 
 .sec_4 .img {
