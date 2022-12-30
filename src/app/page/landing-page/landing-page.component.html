@@ -1,1 +1,51 @@
-<p>landing-page works!</p>
+<section class="sec_3 py-3">
+
+    <div class="uk-container">
+
+        <div class="uk-grid-small" uk-grid>
+
+            <div class="uk-width-1-4@l">
+
+            </div>
+
+            <div class="uk-width-expand@l">
+
+                <div class="uk-grid-small uk-child-width-1-2@l" uk-grid>
+
+                    <div *ngFor="let item of serviceArr">
+
+                        <div class="uk-grid-small" uk-grid>
+
+                            <div class="uk-width-auto@l">
+                                <div style="width: 50px;">
+                                    <img width="100%" [src]="item.icon" alt="">
+                                </div>
+                            </div>
+
+                            <div class="uk-width-expand@l">
+                                <h4 class="mb-1 nescafeC_ f_Light">{{item.title}}</h4>
+                                <p class="lightbrownC_ f_Light">{{item.description}}</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="uk-width-1-4">
+
+        <div class="bg_">
+            <!-- <img src="../../../assets/img/img_service.jpg" alt="" srcset=""> -->
+        </div>
+
+    </div>
+
+</section>
