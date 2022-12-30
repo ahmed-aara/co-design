@@ -16,6 +16,7 @@ import { IncludePipe } from './pipe/include.pipe';
 import { ContactComponent } from './page/contact/contact.component';
 import { OurServiceComponent } from './page/our-service/our-service.component';
 import { OurWorkComponent } from './page/our-work/our-work.component';
+import { TestComponent } from './page/test/test.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { OurWorkComponent } from './page/our-work/our-work.component';
     IncludePipe,
     ContactComponent,
     OurServiceComponent,
-    OurWorkComponent
+    OurWorkComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
