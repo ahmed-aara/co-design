@@ -1,38 +1,75 @@
+<section class="sec_1">
+
+    <div class="img">
+        <img src="../../../assets/img/bg_.png" alt="">
+        <div class="black-screen"></div>
+    </div>
+
+    <div class="uk-container full_w full_h">
+        <div class="caption uk-flex uk-flex-middle">
+
+            <div>
+
+                <h2 class="f_PlayfairDisplay_ExtraBold offwhiteC_">Bring</h2>
+                <h3 class="f_PlayfairDisplay_Bold lightbrownC_">Magic to <br> home</h3>
+                <div class="line offwhiteBG_"></div>
+                <p class="offwhiteC_">Our work have the traditional taste with <br> contemporary modern touch, thus we
+                    possess <br> a timeless style
+                    generating
+                    broad market <br> appeal.</p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+</section>
+
+
 <section class="sec_3 py-3">
 
     <div class="uk-container">
 
-        <div class="uk-grid-small" uk-grid>
+        <div class="uk-grid-small uk-flex uk-flex-middle" uk-grid>
 
-            <div class="uk-width-1-4@l">
+            <div class="uk-width-1-3@l">
 
             </div>
 
             <div class="uk-width-expand@l">
 
-                <div class="uk-grid-small uk-child-width-1-2@l" uk-grid>
+                <div class="uk-container">
 
-                    <div *ngFor="let item of serviceArr">
 
-                        <div class="uk-grid-small" uk-grid>
+                    <div class="uk-grid-small uk-child-width-1-2@l" uk-grid>
 
-                            <div class="uk-width-auto@l">
-                                <div style="width: 50px;">
-                                    <img width="100%" [src]="item.icon" alt="">
+                        <div *ngFor="let item of serviceArr">
+
+                            <div class="uk-grid-small" uk-grid>
+
+                                <div class="uk-width-auto@l">
+                                    <div style="width: 50px;">
+                                        <img width="100%" [src]="item.icon" alt="">
+                                    </div>
                                 </div>
+
+                                <div class="uk-width-expand@l">
+                                    <h4 class="mb-1 nescafeC_ f_Light">{{item.title}}</h4>
+                                    <p class="lightbrownC_ f_Light">{{item.description}}</p>
+                                </div>
+
                             </div>
 
-                            <div class="uk-width-expand@l">
-                                <h4 class="mb-1 nescafeC_ f_Light">{{item.title}}</h4>
-                                <p class="lightbrownC_ f_Light">{{item.description}}</p>
-                            </div>
 
                         </div>
-
 
                     </div>
 
                 </div>
+
 
             </div>
 
@@ -40,12 +77,12 @@
 
     </div>
 
-    <div class="uk-width-1-4">
 
+    <div class="uk-width-1-4@l">
         <div class="bg_">
             <!-- <img src="../../../assets/img/img_service.jpg" alt="" srcset=""> -->
         </div>
-
     </div>
+
 
 </section>
