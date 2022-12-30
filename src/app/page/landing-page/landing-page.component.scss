@@ -1,3 +1,4 @@
+//sec_1
 .sec_1 {
     position: relative;
     height: 100vh;
@@ -55,7 +56,63 @@
     line-height: 66px;
 }
 
+//sec_2
+.sec_2 {
+    position: relative;
+}
+
+.sec_2 .uk-container {
+    z-index: 2;
+}
+
+.sec_2 .line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgba($color: #45270f, $alpha: 0.1);
+    z-index: 1;
+}
+
+//sec_3
+
+.sec_3 {
+    position: relative;
+}
+
+.sec_3 .uk-container {
+    position: relative;
+    z-index: 1;
+    top: 0;
+}
+
+.sec_3 .wallpaper_box {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+}
+
 .sec_3 .bg_ {
-    height: 80vh;
-    background-color: rebeccapurple;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sec_3 .bg_ img {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.sec_3 .bg_ .border_ {
+    position: absolute;
+    width: 80%;
+    border: 7px solid #ebd3c0 !important;
+    height: 80%;
+    z-index: 2;
+}
+
+.sec_3 .placeholder_height {
+    height: 100vh;
 }
