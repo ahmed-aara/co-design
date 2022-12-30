@@ -30,9 +30,6 @@
     position: relative;
 }
 
-.sec_1 .content_ {
-    background-color: rebeccapurple;
-}
 .sec_1 .box .line_ {
     width: 35%;
     height: 2px;
@@ -192,9 +189,125 @@
     color: #eba771 !important;
 }
 
-.sec_5 .bg_ img {
+.sec_5 .bg_ {
     position: relative;
-    width: 100%;
-    height: 200px;
     overflow: hidden;
+    height: 200px;
+}
+
+.sec_5 .bg_ a {
+    display: block;
+}
+
+.sec_5 .bg_ img {
+    position: absolute;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*responsive*********************************************/
+
+/*
+[Table of Contents]
+1. 1600px
+2. 1440px
+3. 1280px
+4. 1199px
+5. 1024px ipad pro
+6. 991px
+7. 959px
+8. 880px
+9. 768px
+10. 767px microsoft Lomia 550
+11. 539px
+12. 479px
+13. 400px
+*/
+
+@media only screen and (max-width: 1920px) {
+}
+
+@media only screen and (max-width: 1600px) {
+}
+
+@media only screen and (max-width: 1440px) {
+}
+
+@media only screen and (max-width: 1380px) {
+}
+
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1199px) {
+}
+
+@media only screen and (max-width: 1100px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 959px) {
+}
+
+@media only screen and (max-width: 880px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 767px) {
+    //sec_1
+    .sec_1 {
+        height: 90vh;
+    }
+
+    .sec_1 .bg_ .black_screen {
+        background: linear-gradient(
+            0deg,
+            rgba($color: #45270f, $alpha: 0.8) 0%,
+            rgba($color: #45270f, $alpha: 0.5) 50%,
+            rgba($color: #45270f, $alpha: 0.3) 100%
+        );
+    }
+
+    .sec_1 .box h2 {
+        font-size: 4rem;
+        line-height: 50px;
+    }
+
+    .sec_1 .box h3 {
+        font-size: 3rem;
+        line-height: unset;
+    }
+
+    //sec_3
+
+    .sec_3 .bg_ {
+        height: 50vh;
+    }
+
+    .sec_3 .placeholder_height {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+}
+
+@media only screen and (max-width: 539px) {
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 479px) {
+}
+
+@media only screen and (max-width: 400px) {
 }
