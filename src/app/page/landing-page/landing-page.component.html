@@ -1,4 +1,4 @@
-<div hidden class="uk-position-relative">
+<div class="uk-position-relative">
 
     <section class="sec_1">
 
@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="uk-navbar-right">
-                    <a class="text-right" href="#">
+                    <a class="text-right" uk-toggle="target: #offcanvas-menu" href="#">
                         <img width="30%" src="./assets/img/menu.svg" alt="">
                     </a>
                 </div>
@@ -68,7 +68,7 @@
 
 </div>
 
-<section hidden class="sec_2 py-4 uk-flex uk-flex-middle">
+<section class="sec_2 py-4 uk-flex uk-flex-middle">
 
     <div class="line"></div>
 
@@ -91,7 +91,7 @@
 
 </section>
 
-<section hidden class="sec_3">
+<section class="sec_3">
 
     <div class="uk-container">
 
@@ -107,7 +107,7 @@
 
                     <div *ngFor="let item of serviceArr">
 
-                        <div class="uk-grid-small" uk-grid>
+                        <div class="uk-grid-small mb-2" uk-grid>
 
                             <div class="uk-width-auto@l">
                                 <div style="width: 50px;">
@@ -141,7 +141,7 @@
 
 </section>
 
-<section hidden class="sec_4 my-4">
+<section class="sec_4 my-4">
 
     <div class="img">
         <img src="assets/img/info_bg.jpg" alt="">
@@ -202,12 +202,12 @@
             <div class="uk-grid-small uk-child-width-auto@l uk-flex uk-flex-center" uk-grid>
 
                 <div>
-                    <div class="uk-active nav_box text-center p-1 cursor" uk-filter-control><a class="f_SemiBold"
+                    <div class="uk-active nav_box text-center p-1 px-3 cursor" uk-filter-control><a class="f_SemiBold"
                             href="#">All</a></div>
                 </div>
 
                 <div *ngFor="let item of placeArr">
-                    <div class="nav_box text-center p-1 cursor" attr.uk-filter-control="[data-color='{{item.value}}']">
+                    <div class="nav_box text-center p-1 px-3 cursor" attr.uk-filter-control="[data-color='{{item.value}}']">
                         <a class="f_SemiBold" href="#">{{item.name}}</a>
                     </div>
                 </div>

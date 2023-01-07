@@ -36,3 +36,91 @@
 .sec_work .nav_box.uk-active a {
     color: #eba771 !important;
 }
+
+/*responsive*********************************************/
+
+/*
+[Table of Contents]
+1. 1600px
+2. 1440px
+3. 1280px
+4. 1199px
+5. 1024px ipad pro
+6. 991px
+7. 959px
+8. 880px
+9. 768px
+10. 767px microsoft Lomia 550
+11. 539px
+12. 479px
+13. 400px
+*/
+
+@media only screen and (max-width: 1920px) {
+}
+
+@media only screen and (max-width: 1600px) {
+}
+
+@media only screen and (max-width: 1440px) {
+}
+
+@media only screen and (max-width: 1380px) {
+}
+
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1199px) {
+}
+
+@media only screen and (max-width: 1100px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 959px) {
+}
+
+@media only screen and (max-width: 880px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 767px) {
+    .sec_work h2 {
+        font-size: 3rem;
+    }
+
+    .sec_work h3 {
+        line-height: 45px;
+    }
+
+    .sec_work .line_ {
+        width: 80%;
+    }
+
+    .sec_work .box_ {
+        height: unset;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+}
+
+@media only screen and (max-width: 539px) {
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 479px) {
+}
+
+@media only screen and (max-width: 400px) {
+}

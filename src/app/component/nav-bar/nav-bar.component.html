@@ -1,4 +1,4 @@
-<div *ngIf="option" class="nav_">
+<div *ngIf="option" class="nav_ nescafeBG_">
 
     <div class="web_nav">
 
@@ -32,7 +32,7 @@
     <div class="mobile_nav">
 
         <div class="uk-container">
-            <nav class="uk-navbar-container" uk-navbar>
+            <nav class="" uk-navbar>
 
                 <div class="uk-navbar-left logo_ full_h">
                     <div class="full_w full_h uk-flex uk-flex-center uk-flex-middle">
@@ -66,19 +66,19 @@
 </div>
 
 <div id="offcanvas-menu" uk-offcanvas="mode: slide; overlay: true;flip: true">
-    <div class="uk-offcanvas-bar whiteBG_">
+    <div class="uk-offcanvas-bar bodyBG_">
 
         <button class="uk-offcanvas-close blackC_" type="button" uk-close></button>
 
         <div  class="body_">
-            <h2 class="f_Light mb-2">Menu</h2>
+            <h2 class="f_PlayfairDisplay_ExtraBold darkbrownC_ mb-2">Menu</h2>
 
-            <div class="line_ full_w my-3"></div>
+            <div class="line_ lightbrownBG_ full_w my-3"></div>
 
             <div class="uk-grid-small uk-child-width-1-1@l links_ mt-3" uk-grid>
                 <div *ngFor="let item of pagesArr">
                     <a routerLink="{{item.link}}" (click)="closeOffcanvas('offcanvas-menu')"
-                        class="f_Light">{{item.name}}</a>
+                        class="f_Light lightbrownC_">{{item.name}}</a>
                 </div>
             </div>
 
