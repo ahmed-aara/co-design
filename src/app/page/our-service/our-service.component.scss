@@ -12,3 +12,38 @@
     width: 14%;
     height: 2px;
 }
+
+.sec_service .bg_ {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.sec_service .bg_ img {
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.sec_service .bg_ .black_screen {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba($color: #462409, $alpha: 0.6);
+}
+
+.sec_service .card_ .title_ {
+    position: relative;
+    font-size: 3rem;
+    z-index: 3;
+}
+
+.sec_service .card_ .description_ {
+    font-size: 1.5rem;
+}
+
+.sec_service .card_ .line_ {
+    position: relative;
+    z-index: 4;
+    height: 2px;
+    width: 30%;
+}

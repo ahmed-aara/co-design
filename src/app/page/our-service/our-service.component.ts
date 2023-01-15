@@ -12,28 +12,37 @@ export class OurServiceComponent implements OnInit {
       title: 'Steel Structural',
       description: `Steel construction works are among the most important things we offer within our projects to achieve project integration from our one company licensed in Dubai Municipality and Dubai Real Estate Development Authority
       It is also our steel construction works under the supervision of civil engineers specialized in the steel department
-      This is what guarantees us the success of any project`
+      This is what guarantees us the success of any project`,
+      img: 'assets/img/service/steel-structural.jpg'
     },
     {
       title: 'Building Contracting',
       description: `We are a building contracting company specialized in all construction and interior design works.
       We have a work team with important competencies and work experience
-      In addition to the existence of a license for all our business and important projects in Dubai and Abu Dhabi under the name of our company`
+      In addition to the existence of a license for all our business and important projects in Dubai and Abu Dhabi under the name of our company`,
+      img: 'assets/img/service/building-contracting.jpg'
     },
     {
       title: 'Consulting',
       description: `To ensure the success of any project financially and operationally, there must be consulting engineers with experience and competencies who are licensed by Dubai Municipality as consulting engineers.
-      Our company is fully integrated in terms of team, competencies and expertise, so we guarantee to provide our best for the success of any project.`
+      Our company is fully integrated in terms of team, competencies and expertise, so we guarantee to provide our best for the success of any project.`,
+      img: 'assets/img/service/consulting.jpg'
     },
     {
       title: 'MEP',
       description: `services are essential to the construction of the building.
       Therefore, we care about all our departments and our cadres of engineers and experts in order to provide our best for the success of any project.
-      Mechanical, electrical, and plumbing services are critical components of the construction supply chain.`
+      Mechanical, electrical, and plumbing services are critical components of the construction supply chain.`,
+      img: 'assets/img/service/mep.jpg'
     }
   ]
 
   ngOnInit() {
+  }
+
+  checkEven(index: any) {
+    if (index % 2 === 0) return true
+    else return false
   }
 
 }
