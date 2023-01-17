@@ -1,11 +1,18 @@
-<section class="sec_contact py-4">
+<div *ngIf="loading" class="loading_" @fadeOut>
+    <div class="full_w full_h uk-flex uk-flex-middle uk-flex-center">
+        <img width="40%" src="assets/img/ezgif.com-gif-maker.gif" alt="">
+    </div>
+</div>
+
+<section *ngIf="!loading" class="sec_contact py-4">
 
     <div class="uk-container">
 
         <div class="uk-grid-medium uk-child-width-auto@l uk-flex" uk-grid>
 
             <div>
-                <h3 class="f_ExtraLight darkbrownC_" uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false">Get in Touch</h3>
+                <h3 class="f_ExtraLight darkbrownC_" uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false">
+                    Get in Touch</h3>
             </div>
 
             <div>
@@ -13,13 +20,15 @@
             </div>
 
             <div class="uk-width-expand@l" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">
-                <p class="f_Light lightbrownC_">If you have any questions or suggestions for our business school team, don’t hesitate
+                <p class="f_Light lightbrownC_">If you have any questions or suggestions for our business school team,
+                    don’t hesitate
                     contacting us directly or via our Facebook page.</p>
             </div>
 
         </div>
 
-        <div class="uk-grid-small uk-child-width-1-4@l mt-4" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .card_; delay: 200; repeat: false">
+        <div class="uk-grid-small uk-child-width-1-4@l mt-4" uk-grid
+            uk-scrollspy="cls: uk-animation-fade; target: .card_; delay: 200; repeat: false">
 
             <div *ngFor="let item of contactArr">
 
@@ -43,23 +52,30 @@
 
             </div>
 
-            <div class="uk-width-1-3@l"  uk-scrollspy="cls: uk-animation-fade; delay: 600; repeat: false">
+            <div class="uk-width-1-1@l">
+                <google-map height="250px" width="100%" [center]="center" [zoom]="zoom">
+                    <map-marker *ngFor="let marker of markers" [position]="marker.position" [label]="marker.label">
+                    </map-marker>
+                </google-map>
+            </div>
+
+            <div class="uk-width-1-3@l" uk-scrollspy="cls: uk-animation-fade; delay: 600; repeat: false">
                 <input class="uk-input" type="text" placeholder="Your Name...">
             </div>
 
-            <div class="uk-width-1-3@l"  uk-scrollspy="cls: uk-animation-fade; delay: 700; repeat: false">
+            <div class="uk-width-1-3@l" uk-scrollspy="cls: uk-animation-fade; delay: 700; repeat: false">
                 <input class="uk-input" type="text" placeholder="E-mail...">
             </div>
 
-            <div class="uk-width-1-3@l"  uk-scrollspy="cls: uk-animation-fade; delay: 800; repeat: false">
+            <div class="uk-width-1-3@l" uk-scrollspy="cls: uk-animation-fade; delay: 800; repeat: false">
                 <input class="uk-input" onkeypress="validate(event)" type="text" placeholder="Phone...">
             </div>
 
-            <div class="uk-width-1-1@l"  uk-scrollspy="cls: uk-animation-fade; delay: 900; repeat: false">
+            <div class="uk-width-1-1@l" uk-scrollspy="cls: uk-animation-fade; delay: 900; repeat: false">
                 <textarea class="uk-textarea" rows="5" placeholder="Message"></textarea>
             </div>
 
-            <div class="uk-width-1-3@l"  uk-scrollspy="cls: uk-animation-fade; delay: 1000; repeat: false">
+            <div class="uk-width-1-3@l" uk-scrollspy="cls: uk-animation-fade; delay: 1000; repeat: false">
                 <button class="btn py-3 px-4 lightbrownC_ f_Medium cursor">Send
                     Message</button>
             </div>

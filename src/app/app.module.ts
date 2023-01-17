@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GoogleMapsModule } from '@angular/google-maps'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,7 +38,9 @@ import { TestComponent } from './page/test/test.component';
     AppRoutingModule,
     HttpClientModule,
     NgSelectModule,
-    FormsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    GoogleMapsModule
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy }

@@ -37,6 +37,51 @@
     color: #eba771 !important;
 }
 
+////////////////////////////////////////////////
+.sec_work .card_ {
+    position: relative;
+    height: 250px;
+}
+
+.sec_work .card_ .bg_ {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.sec_work .card_ .bg_ img {
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.sec_work .card_ .bg_ .black_screen {
+    position: absolute;
+    background-image: linear-gradient(0deg, #45270f, rgba($color: #45270f, $alpha: 0.8), transparent);
+    z-index: 2;
+}
+
+.sec_work .card_ .body_ {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+}
+
+.sec_work .card_ h4 {
+    font-size: 2rem;
+}
+
+.sec_work .card_ .body_ .bg_img {
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+.sec_work .card_ .body_ .bg_img img {
+    position: absolute;
+    object-fit: cover;
+}
+
 /*responsive*********************************************/
 
 /*

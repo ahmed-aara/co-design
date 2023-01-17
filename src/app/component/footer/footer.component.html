@@ -49,17 +49,21 @@
                 <h2 class="whiteC_ f_Bold" uk-scrollspy="cls: uk-animation-fade; delay: 700; repeat: false">Quicks Links
                 </h2>
 
-                <div class="uk-grid-small uk-child-width-1-1@l links_ mt-2" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .whiteC_; delay: 300; repeat: false">
+                <div class="uk-grid-small uk-child-width-1-1@l links_ mt-2" uk-grid
+                    uk-scrollspy="cls: uk-animation-fade; target: .whiteC_; delay: 300; repeat: false">
                     <div *ngFor="let item of pagesArr">
                         <a routerLink="{{item.link}}" class="whiteC_ f_Light">{{item.name}}</a>
                     </div>
                 </div>
 
                 <div class="social_ mt-3">
-                    <h3 class="whiteC_ f_Light" uk-scrollspy="cls: uk-animation-fade; delay: 800; repeat: false">GET IN TOUCH</h3>
-                    <p class="whiteC_ f_Medium" uk-scrollspy="cls: uk-animation-fade; delay: 900; repeat: false">Follow us now and get our last updates</p>
+                    <h3 class="whiteC_ f_Light" uk-scrollspy="cls: uk-animation-fade; delay: 800; repeat: false">GET IN
+                        TOUCH</h3>
+                    <p class="whiteC_ f_Medium" uk-scrollspy="cls: uk-animation-fade; delay: 900; repeat: false">Follow
+                        us now and get our last updates</p>
 
-                    <div class="uk-grid-small uk-child-width-auto mt-1" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .social_; delay: 300; repeat: false">
+                    <div class="uk-grid-small uk-child-width-auto mt-1" uk-grid
+                        uk-scrollspy="cls: uk-animation-fade; target: .social_; delay: 300; repeat: false">
 
                         <div *ngFor="let item of social_links">
                             <a class="social_" target="_blank" [href]="item"><img width="100%" [src]="(item | include: 'facebook') ? 'assets/img/vector/facebook.svg': '' ||
@@ -78,5 +82,7 @@
         </div>
 
     </div>
+
+
 
 </footer>

@@ -20,33 +20,35 @@ export class FooterComponent implements OnInit {
   contactArr: any = [
     {
       type: "phone",
-      value: "00 00000000000"
+      value: "+971569110002"
     },
     {
       type: "time",
-      value: "Mon-Sat: 011:00AM - 06:00PM"
+      value: "Mon-Sat: 08:00AM - 05:00PM"
     },
     {
       type: "location",
-      value: "1234 Address - World - World"
+      value: "Business Bay - Dubai - United Arab Emirates"
     },
     {
       type: "email",
-      value: "co@email.com"
+      value: "main@agcodesign.ae"
     }
   ]
 
-
   social_links: any = [
     "https://www.facebook.com/",
-    "https://www.instagram.com/",
-    "https://www.linkedin.com/",
+    "https://www.instagram.com/agco.design/",
+    "https://www.linkedin.com/in/agco-design-0155b1260/",
     "https://twitter.com/",
-    "https://wa.me/00000"
+    "https://wa.me/+971569110002"
   ]
 
   //Variable
   year: any
+
+  constructor() {
+  }
 
   ngOnInit(): void {
     this.year = getDate('yyyy')

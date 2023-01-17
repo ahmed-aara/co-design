@@ -1,4 +1,10 @@
-<section class="sec_about">
+<div *ngIf="loading" class="loading_" @fadeOut>
+    <div class="full_w full_h uk-flex uk-flex-middle uk-flex-center">
+        <img width="40%" src="assets/img/ezgif.com-gif-maker.gif" alt="">
+    </div>
+</div>
+
+<section *ngIf="!loading" class="sec_about">
 
     <div class="uk-container full_h">
 
@@ -6,33 +12,41 @@
 
             <div class="uk-width-expand@l">
 
-                <h2 class="f_PlayfairDisplay_ExtraBold darkbrownC_" uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false">Award Winning</h2>
-                
-                <h3 class="f_PlayfairDisplay_ExtraBold lightbrownC_" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">Interior Design</h3>
+                <h2 class="f_PlayfairDisplay_ExtraBold darkbrownC_"
+                    uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false">AGCO DESIGN</h2>
+
+                <h3 class="f_PlayfairDisplay_ExtraBold lightbrownC_"
+                    uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">Interior Design</h3>
 
                 <p class="darkbrownC_ f_Medium my-3" uk-scrollspy="cls: uk-animation-fade; delay: 600; repeat: false">
-                    was set up in 2014 and it's Headquartered in Dubai UAE. By providing unique designs and outstanding
-                    project management services in the field of Interior Decoration. AG Co Design has been granted an
-                    ISO Certificate for its Quality Management system in 2015.
+                    contracting company started as one of the most prestigious fitout contracting companies in Dubai—and
+                    now we have accomplished the realms of Consulting and
+                    Contracting .
                 </p>
 
                 <p class="darkbrownC_ f_Medium mb-3" uk-scrollspy="cls: uk-animation-fade; delay: 700; repeat: false">
-                    Through innovation, research, and building on smart, highly creative solutions that embody our
-                    client's brands, we advance the field. As an employee-owned firm, our diverse and multi-talented
-                    professionals are passionate, intense, and deeply client focused.
+                    We are a group of competent, enthusiastic individuals with skilled designers and seasoned project
+                    managers on hand to direct our clients through the flawless and timely completion of every design
+                    and all projects .
                 </p>
 
                 <p class="darkbrownC_ f_Medium mb-3" uk-scrollspy="cls: uk-animation-fade; delay: 800; repeat: false">
-                    We're inspired working alongside our clients to resolve complex issues and design relaxing
-                    environments where people love to be. Through our work we strive to share our passion with our
-                    clients.
+                    Anything AGCO DESIGN does is based on the design as a service industry. To develop a coherent design
+                    and build an effective project execution strategy, we collaborate closely with our clients and other
+                    industry professionals.
+                </p>
+
+                <p class="darkbrownC_ f_Medium mb-3" uk-scrollspy="cls: uk-animation-fade; delay: 900; repeat: false">
+                    As a result, we can provide each customer with unrivaled attention and support. many of architects
+                    and interior designers and project managers with whom we work value our expertise in managing the
+                    nuances of a project
                 </p>
 
             </div>
 
             <div class="uk-width-1-2 full_h">
-                <div class="bg_ full_h" uk-scrollspy="cls: uk-animation-fade; delay: 900; repeat: false">
-                    <img src="../../../assets/img/gallery.png" alt="">
+                <div class="bg_ full_h" uk-scrollspy="cls: uk-animation-fade; delay: 1000; repeat: false">
+                    <img src="assets/img/gallery.png" alt="">
                 </div>
             </div>
 

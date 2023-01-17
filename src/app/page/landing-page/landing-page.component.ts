@@ -1,9 +1,40 @@
 import { Component, OnInit } from '@angular/core';
+import { transition, style, animate, trigger } from '@angular/animations';
+
+const enterTransition = transition(':enter', [
+  style({
+    opacity: 0
+  }),
+  animate('1s ease-in', style({
+    opacity: 1
+  }))
+]);
+
+const leaveTrans = transition(':leave', [
+  style({
+    opacity: 1
+  }),
+  animate('1s ease-out', style({
+    opacity: 0
+  }))
+])
+
+const fadeIn = trigger('fadeIn', [
+  enterTransition
+]);
+
+const fadeOut = trigger('fadeOut', [
+  leaveTrans
+]);
 
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss']
+  styleUrls: ['./landing-page.component.scss'],
+  animations: [
+    fadeIn,
+    fadeOut
+  ]
 })
 export class LandingPageComponent implements OnInit {
 
@@ -65,21 +96,29 @@ export class LandingPageComponent implements OnInit {
   ]
 
   placeArr: any = [
-    { name: 'Our Office', value: 'office' },
-    { name: 'Mandi Man', value: 'mandi-man' },
-    { name: 'Jabal Ali Kaysar', value: 'jabal-ali-kaysar' },
-    { name: 'Fadi Al Barsha', value: 'fadi-barsha' },
-    { name: 'Animal Care', value: 'animal-care' },
+    { name: 'Our Office', value: 'office', img: 'assets/img/work/office/3.jpg', imgs: [] },
+    { name: 'Al Banoosh', value: 'banoosh', img: 'assets/img/work/banoosh/3.jpg', imgs: [] },
+    { name: 'Mandi Man', value: 'mandi-man', img: 'assets/img/work/mandi-man/2.jpg', imgs: [] },
+    { name: 'Jabal Ali Mall', value: 'jabal-ali-mall', img: 'assets/img/work/jabal-ali-mall/3.jpg', imgs: [] },
+    { name: 'Fadi Al Barsha', value: 'fadi-barsha', img: 'assets/img/work/fadi-barsha/1.jpg', imgs: [] },
+    { name: 'Animal Care', value: 'animal-care', img: 'assets/img/work/animal-care/2.jpg', imgs: [] },
   ]
 
   workArr: any = []
 
-  ngOnInit(): void {
-    for (let x = 1; x <= 3; x++) this.workArr.push({ img: `${x}.jpg`, value: 'office' })
-    for (let x = 1; x <= 3; x++) this.workArr.push({ img: `${x}.jpg`, value: 'mandi-man' })
-    for (let x = 1; x <= 6; x++) this.workArr.push({ img: `${x}.jpg`, value: 'jabal-ali-kaysar' })
-    for (let x = 1; x <= 3; x++) this.workArr.push({ img: `${x}.jpg`, value: 'fadi-barsha' })
-    for (let x = 1; x <= 5; x++) this.workArr.push({ img: `${x}.jpg`, value: 'animal-care' })
-  }
+  loading: any = true;
 
+  ngOnInit(): void {
+    for (let x = 1; x <= 4; x++) this.placeArr[0].imgs.push({ img: `${x}.jpg`, value: 'office' })
+    for (let x = 1; x <= 4; x++) this.placeArr[1].imgs.push({ img: `${x}.jpg`, value: 'banoosh' })
+    for (let x = 1; x <= 3; x++) this.placeArr[2].imgs.push({ img: `${x}.jpg`, value: 'mandi-man' })
+    for (let x = 1; x <= 4; x++) this.placeArr[3].imgs.push({ img: `${x}.jpg`, value: 'jabal-ali-mall' })
+    for (let x = 1; x <= 3; x++) this.placeArr[4].imgs.push({ img: `${x}.jpg`, value: 'fadi-barsha' })
+    for (let x = 1; x <= 4; x++) this.placeArr[5].imgs.push({ img: `${x}.jpg`, value: 'animal-care' })
+
+    setTimeout(() => {
+      this.loading = false
+    }, 2000);
+
+  }
 }

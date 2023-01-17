@@ -135,7 +135,7 @@
     object-fit: cover;
 }
 
-.sec_4 .img .balck_screen {
+.sec_4 .img .black_screen {
     position: absolute;
     top: 0;
     left: 0;
@@ -173,6 +173,46 @@
 .sec_5 .header_ .line_ {
     width: 10%;
     height: 2px;
+}
+
+.sec_5 .card_ {
+    position: relative;
+    height: 250px;
+}
+
+.sec_5 .card_ .bg_ {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.sec_5 .card_ .bg_ img {
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.sec_5 .card_ .bg_ .black_screen {
+    position: absolute;
+    background-image: linear-gradient(0deg, #45270f, rgba($color: #45270f, $alpha: 0.7), transparent);
+    z-index: 2;
+}
+
+.sec_5 .card_ .body_ {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+}
+
+.sec_5 .card_ .body_ .bg_img {
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+.sec_5 .card_ .body_ .bg_img img {
+    position: absolute;
+    object-fit: cover;
 }
 
 .sec_5 .nav_box {

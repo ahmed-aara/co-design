@@ -1,12 +1,21 @@
-<section class="sec_service py-3">
+<div *ngIf="loading" class="loading_" @fadeOut>
+    <div class="full_w full_h uk-flex uk-flex-middle uk-flex-center">
+        <img width="40%" src="assets/img/ezgif.com-gif-maker.gif" alt="">
+    </div>
+</div>
+
+<section *ngIf="!loading" class="sec_service py-3">
 
     <div class="uk-container">
 
-        <h2 class="f_PlayfairDisplay_ExtraBold darkbrownC_" uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false">Our Service</h2>
-        <h3 class="f_PlayfairDisplay_ExtraBold lightbrownC_" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">We Are At Your Service</h3>
+        <h2 class="f_PlayfairDisplay_ExtraBold darkbrownC_"
+            uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false">Our Service</h2>
+        <h3 class="f_PlayfairDisplay_ExtraBold lightbrownC_"
+            uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">We Are At Your Service</h3>
         <div class="lightbrownBG_ line_ mb-3"></div>
 
-        <div class="uk-grid-small uk-child-width-1-1@l mt-2" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .card_; delay: 400; repeat: false">
+        <div class="uk-grid-small uk-child-width-1-1@l mt-2" uk-grid
+            uk-scrollspy="cls: uk-animation-fade; target: .card_; delay: 400; repeat: false">
 
             <div class="card_" *ngFor="let item of serviceArr; let i = index">
 
