@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { transition, style, animate, trigger } from '@angular/animations';
+import { MailService } from 'src/app/service/mail.service';
+
+declare const UIkit: any
 
 const enterTransition = transition(':enter', [
   style({
@@ -36,7 +39,7 @@ const fadeOut = trigger('fadeOut', [
     fadeOut
   ]
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
 
   contactArr: any = [
     {
@@ -49,13 +52,21 @@ export class ContactComponent {
     },
     {
       type: "location",
-      value: "Business Bay - Dubai - United Arab Emirates"
+      value: "Business Bay - Dubai - Emirates"
     },
     {
       type: "email",
       value: "main@agcodesign.ae"
     }
   ]
+
+  dataEmail: any = {
+    type: 'mail',
+    name: null,
+    user_mail: null,
+    phone: null,
+    message: null,
+  }
 
   loading: any = true;
 
@@ -75,10 +86,41 @@ export class ContactComponent {
     lng: 55.2661582
   };
 
+  constructor(private email: MailService) { }
+
   ngOnInit(): void {
     setTimeout(() => {
       this.loading = false
     }, 2000);
+  }
+
+  send() {
+    this.notification('loading...')
+    this.email.sendMail(this.dataEmail).subscribe(
+      response => {
+        this.clear()
+        this.notification(response.message)
+      }
+    )
+  }
+
+  clear() {
+    this.dataEmail = {
+      type: 'mail',
+      name: null,
+      user_mail: null,
+      phone: null,
+      message: null,
+    }
+
+  }
+
+  notification(message: any) {
+    UIkit.notification({
+      message: '<div class="full_left_"><h5 class="m-0 pl-2 whiteC_ f_Medium">' + message + '</h5></div>',
+      pos: 'bottom-right',
+      timeout: 4000
+    });
   }
 
 }
