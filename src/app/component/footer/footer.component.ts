@@ -40,7 +40,6 @@ export class FooterComponent implements OnInit {
     "https://www.facebook.com/",
     "https://www.instagram.com/agco.design/",
     "https://www.linkedin.com/in/agco-design-0155b1260/",
-    "https://twitter.com/",
     "https://wa.me/+971569110002"
   ]
 

@@ -43,7 +43,7 @@ import { TestComponent } from './page/test/test.component';
     GoogleMapsModule
   ],
   providers: [
-    { provide: LocationStrategy, useClass: HashLocationStrategy }
+    // { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })
