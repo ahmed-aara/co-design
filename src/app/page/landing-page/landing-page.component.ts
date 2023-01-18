@@ -101,7 +101,7 @@ export class LandingPageComponent implements OnInit {
     { name: 'Mandi Man', value: 'mandi-man', img: 'assets/img/work/mandi-man/2.jpg', imgs: [] },
     { name: 'Jabal Ali Mall', value: 'jabal-ali-mall', img: 'assets/img/work/jabal-ali-mall/3.jpg', imgs: [] },
     { name: 'Animal Care', value: 'animal-care', img: 'assets/img/work/animal-care/2.jpg', imgs: [] },
-    { name: 'Clinic Dubai JLT', value: 'clinic-dubai-jlt', img: 'assets/img/work/clinic-dubai-jlt/3.jpg', imgs: [] },
+    { name: 'Dr.K jlt', value: 'clinic-dubai-jlt', img: 'assets/img/work/clinic-dubai-jlt/3.jpg', imgs: [] },
   ]
 
   workArr: any = []

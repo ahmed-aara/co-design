@@ -46,7 +46,7 @@ export class OurWorkComponent implements OnInit {
     { name: 'Launch time', value: 'launch-time', img: 'assets/img/work/launch-time/3.jpg', imgs: [] },
     { name: 'Jihome cafe', value: 'jihome-cafe', img: 'assets/img/work/jihome-cafe/3.jpg', imgs: [] },
     { name: 'Jabal Ali Mall', value: 'jabal-ali-mall', img: 'assets/img/work/jabal-ali-mall/3.jpg', imgs: [] },
-    { name: 'Clinic Dubai JLT', value: 'clinic-dubai-jlt', img: 'assets/img/work/clinic-dubai-jlt/3.jpg', imgs: [] },
+    { name: 'Dr.K jlt', value: 'clinic-dubai-jlt', img: 'assets/img/work/clinic-dubai-jlt/3.jpg', imgs: [] },
     { name: 'Doors', value: 'doors', img: 'assets/img/work/doors/3.jpg', imgs: [] },
     { name: 'Donner Kebab', value: 'donner-kebab', img: 'assets/img/work/donner-kebab/3.jpg', imgs: [] },
     { name: 'Doner & Gyros', value: 'doner-gyros', img: 'assets/img/work/doner-gyros/3.jpg', imgs: [] },
