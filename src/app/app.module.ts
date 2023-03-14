@@ -19,6 +19,7 @@ import { ContactComponent } from './page/contact/contact.component';
 import { OurServiceComponent } from './page/our-service/our-service.component';
 import { OurWorkComponent } from './page/our-work/our-work.component';
 import { TestComponent } from './page/test/test.component';
+import { FilterWorkPipe } from './pipe/filter-work.pipe';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { TestComponent } from './page/test/test.component';
     ContactComponent,
     OurServiceComponent,
     OurWorkComponent,
-    TestComponent
+    TestComponent,
+    FilterWorkPipe
   ],
   imports: [
     BrowserModule,

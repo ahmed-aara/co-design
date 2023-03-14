@@ -73,15 +73,15 @@ p,
 a {
     font-family: "Poppins-Regular" !important;
     margin: 0 !important;
-    color: #383838 !important;
+    color: #222222 !important;
 }
 
 html {
-    background-color: #fff3eb;
+    background-color: #e6e6e6;
 }
 
 ::selection {
-    background-color: #8B725E;
+    background-color: #f1c40f;
 }
 
 .loading_ {
@@ -90,9 +90,13 @@ html {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background-color: #8B725E;
+    background-color: #222222;
 }
 
 .loading_ img {
     filter: brightness(0) invert(1);
+}
+
+.uk-divider-vertical {
+    border-left: 1px solid #222222;
 }

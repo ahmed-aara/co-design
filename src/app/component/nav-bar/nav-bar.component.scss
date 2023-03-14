@@ -1,3 +1,11 @@
+.active_sticky_navbar {
+    background-color: #222222;
+}
+
+.inactive_sticky_navbar {
+    background-color: #222222;
+}
+
 .nav_ .web_nav {
     display: block;
 }
@@ -26,7 +34,7 @@ nav .uk-navbar-nav a {
 }
 
 nav .uk-navbar-nav .uk-active {
-    background-color: #eba771 !important;
+    // background-color: #eba771 !important;
 }
 
 nav .uk-navbar-nav .icon-active {
@@ -34,7 +42,7 @@ nav .uk-navbar-nav .icon-active {
 }
 
 nav .uk-navbar-nav a.uk-active {
-    color: #8b725e !important;
+    color: #F1C40F !important;
 }
 
 #offcanvas-menu .body_ .line_ {
@@ -52,7 +60,7 @@ nav .uk-navbar-nav a.uk-active {
     display: inline-block;
     width: 20px;
     height: 3px;
-    background-color: #45270f;
+    background-color: #F1C40F;
     margin-right: 10px;
     transition: 0.5s;
 }

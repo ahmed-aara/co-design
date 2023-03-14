@@ -1,4 +1,5 @@
-<div *ngIf="option" class="nav_ nescafeBG_">
+<div *ngIf="option" class="nav_ "
+    uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: active_sticky_navbar; cls-inactive: inactive_sticky_navbar">
 
     <div class="web_nav">
 
@@ -17,8 +18,12 @@
 
                     <ul class="uk-navbar-nav full_h">
 
-                        <li *ngFor="let item of pagesArr"><a class="px-3 f_SemiBold lightbrownC_" [routerLinkActiveOptions]="{exact: true}"
-                                routerLinkActive="uk-active" routerLink="{{item.link}}">{{item.name}}</a></li>
+                        <li *ngFor="let item of pagesArr"><a class="px-3 f_SemiBold whiteC_"
+                                [routerLinkActiveOptions]="{exact: true}" routerLinkActive="uk-active"
+                                routerLink="{{item.link}}">{{item.name}}</a></li>
+
+                        <li><a target="_blank" href="assets/img/portfolio.pdf"
+                                class="px-3 f_SemiBold whiteC_">Portfolio</a></li>
 
                     </ul>
 
@@ -66,20 +71,25 @@
 </div>
 
 <div id="offcanvas-menu" uk-offcanvas="mode: slide; overlay: true;flip: true">
-    <div class="uk-offcanvas-bar bodyBG_">
+    <div class="uk-offcanvas-bar blackBG_">
 
         <button class="uk-offcanvas-close blackC_" type="button" uk-close></button>
 
-        <div  class="body_">
-            <h2 class="f_PlayfairDisplay_ExtraBold darkbrownC_ mb-2">Menu</h2>
+        <div class="body_">
+            <h2 class="f_ExtraBold yellowC_ mb-2">Menu</h2>
 
-            <div class="line_ lightbrownBG_ full_w my-3"></div>
+            <div class="line_ yellowBG_ full_w my-3"></div>
 
             <div class="uk-grid-small uk-child-width-1-1@l links_ mt-3" uk-grid>
                 <div *ngFor="let item of pagesArr">
                     <a routerLink="{{item.link}}" (click)="closeOffcanvas('offcanvas-menu')"
-                        class="f_Light lightbrownC_">{{item.name}}</a>
+                        class="f_Light whiteC_">{{item.name}}</a>
                 </div>
+                <div>
+                    <a target="_blank" href="assets/img/portfolio.pdf" (click)="closeOffcanvas('offcanvas-menu')"
+                        class="f_Light whiteC_">Portfolio</a>
+                </div>
+
             </div>
 
         </div>

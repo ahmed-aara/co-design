@@ -4,85 +4,36 @@
     </div>
 </div>
 
-<div *ngIf="!loading" class="uk-position-relative">
+<section *ngIf="!loading" class="sec_1">
 
-    <section class="sec_1">
+    <div class="bg_ full_h">
+        <img class="full_w full_h" src="assets/img/bg_.jpg" alt="">
+        <div class="black_screen full_w full_h" uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false"></div>
 
-        <div class="bg_ full_w full_h">
-            <img class="full_w full_h" src="assets/img/bg_.png" alt="">
-            <div class="black_screen full_w full_h" uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false">
-            </div>
-        </div>
+        <div class="content_">
 
-        <div class="uk-container full_h">
+            <div class="uk-container">
 
-            <div class="box full_h uk-flex uk-flex-middle">
-
-                <div class="uk-grid-small" uk-grid>
-
-                    <div class="uk-width-1-3@l">
-                        <h2 class="f_PlayfairDisplay_ExtraBold offwhiteC_"
-                            uk-scrollspy="cls: uk-animation-fade; delay: 700; repeat: false">Bring</h2>
-                        <h3 class="f_PlayfairDisplay_Bold lightbrownC_"
-                            uk-scrollspy="cls: uk-animation-fade; delay: 800; repeat: false">Magic to Home</h3>
-                        <div class="line_ offwhiteBG_ my-1"
-                            uk-scrollspy="cls: uk-animation-fade; delay: 900; repeat: false"></div>
-                        <p class="offwhiteC_" uk-scrollspy="cls: uk-animation-fade; delay: 1000; repeat: false">Our work
-                            have the traditional taste with contemporary modern touch,
-                            thus
-                            we
-                            possess a timeless style
-                            generating
-                            broad market appeal.</p>
-                    </div>
-
-                    <div class="uk-width-expand@l">
-
-                        <div class="full_h uk-flex uk-flex-right@l uk-flex-left uk-flex-bottom">
-                            <a class="btn_a offwhiteBG_ py-2 px-3 f_Light nescafeC_" routerLink="/about">Read More</a>
-                        </div>
-
-                    </div>
-
+                <div class="uk-width-2-3@l">
+                    <div class="line_ whiteBG_" uk-scrollspy="cls: uk-animation-fade; delay: 600; repeat: false"></div>
+                    <h2 class="f_Bold yellowC_ mt-3" uk-scrollspy="cls: uk-animation-fade; delay: 700; repeat: false">
+                        Bring Magic to Home</h2>
+                    <h3 class="whiteC_ f_ExtraLight" uk-scrollspy="cls: uk-animation-fade; delay: 800; repeat: false">
+                        Our work have the traditional taste with contemporary modern touch, thus we possess a timeless
+                        style
+                        generating broad market appeal.
+                    </h3>
                 </div>
 
             </div>
 
         </div>
-
-    </section>
-
-    <div class="uk-position-top">
-
-        <div class="uk-container mt-3">
-
-            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-
-                <div class="uk-navbar-left">
-                    <a href="#" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">
-                        <img width="50%" src="assets/img/logo.svg" alt="">
-                    </a>
-                </div>
-
-                <div class="uk-navbar-right">
-                    <a class="text-right" uk-toggle="target: #offcanvas-menu" href="#"
-                        uk-scrollspy="cls: uk-animation-fade; delay: 600; repeat: false">
-                        <img width="30%" src="./assets/img/menu.svg" alt="">
-                    </a>
-                </div>
-
-            </nav>
-
-        </div>
-
 
     </div>
 
-</div>
+</section>
 
-<section *ngIf="!loading" class="sec_2 py-4 uk-flex uk-flex-middle">
-
-    <div class="line" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false"></div>
+<section *ngIf="!loading" class="sec_2 py-4">
 
     <div class="uk-container">
 
@@ -91,9 +42,15 @@
 
             <div *ngFor="let item of aboutArr">
 
-                <div class="card p-3 nescafeBG_">
-                    <h2 class="offwhiteC_ f_PlayfairDisplay_Bold mb-1">{{item.title}}</h2>
-                    <p class="offwhiteC_">{{item.description}}</p>
+                <div class="card ">
+                    <div class="bg_">
+                        <img class="full_w full_h" [src]="item.img" alt="">
+                    </div>
+                    <div class="body_ p-3 whiteBG_">
+                        <h2 class="blackC_ mb-1 f_Bold">{{item.title}}</h2>
+                        <p class="grayC_">{{item.description}}</p>
+                    </div>
+
                 </div>
 
             </div>
@@ -104,24 +61,29 @@
 
 </section>
 
-<section *ngIf="!loading" class="sec_3">
+<section *ngIf="!loading" class="sec_3 py-4">
 
-    <div class="uk-container">
-
-        <div class="uk-grid-collapse uk-flex uk-flex-middle" uk-grid>
-
-            <div class="uk-width-1-3@l">
-                <div class="placeholder_height"></div>
+    <div class="full_w header_">
+        <div class="uk-container  ">
+            <div class="bg_" uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false">
+                <img class="full_w full_h" src="assets/img/sec_3.jpg" alt="">
             </div>
 
-            <div class="uk-width-expand@l">
+        </div>
+    </div>
 
-                <div class="uk-grid-small uk-child-width-1-2@l py-4" uk-grid
-                    uk-scrollspy="cls: uk-animation-fade; target: .card_service; delay: 500; repeat: false">
+    <div class="full_w body_">
 
-                    <div *ngFor="let item of serviceArr">
+        <div class="uk-container">
 
-                        <div class="uk-grid-small mb-2 card_service" uk-grid>
+            <div class="uk-grid-small uk-child-width-1-3@l cards_"
+                uk-scrollspy="cls: uk-animation-fade; target: .card_service; delay: 500; repeat: false" uk-grid>
+
+                <div *ngFor="let item of serviceArr">
+
+                    <div class="card_service whiteBG_ p-3">
+
+                        <div class="uk-grid-small" uk-grid>
 
                             <div class="uk-width-auto@l">
                                 <div style="width: 50px;">
@@ -130,8 +92,8 @@
                             </div>
 
                             <div class="uk-width-expand@l">
-                                <h4 class="mb-1 nescafeC_ f_Light">{{item.title}}</h4>
-                                <p class="lightbrownC_ f_Light">{{item.description}}</p>
+                                <h4 class="mb-1 blackC_ f_Light">{{item.title}}</h4>
+                                <p class="grayC_ f_Light">{{item.description}}</p>
                             </div>
 
                         </div>
@@ -146,55 +108,32 @@
 
     </div>
 
-    <div class="uk-width-1-3@l wallpaper_box" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: false">
-        <div class="bg_ uk-flex uk-flex-middle uk-flex-center">
-            <img class="full_w full_h" src="assets/img/img_service.jpg" alt="" srcset="">
-            <div class="border_"></div>
-        </div>
-    </div>
-
 </section>
 
 <section *ngIf="!loading" class="sec_4 my-4">
 
     <div class="img">
-        <img src="assets/img/info_bg.jpg" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: false" alt="">
+        <img src="assets/img/sec_4.jpg" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: false" alt="">
         <div class="black_screen" uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false"></div>
     </div>
 
-    <div class="caption uk-flex uk-flex-middle">
+    <div class="caption uk-flex uk-flex-middle uk-flex-center">
 
-        <div class="uk-container">
+        <div class="info-caption uk-width-1-2@l">
+            <h2 class="yellowC_ text-center f_Bold" uk-scrollspy="cls: uk-animation-fade; delay: 600; repeat: false">
+                AG CO DESIGN</h2>
 
-            <div class="uk-grid-small uk-child-width-1-2@l uk-flex uk-flex-middle" uk-grid>
+            <h4 class="whiteC_ f_Light text-center mt-1"
+                uk-scrollspy="cls: uk-animation-fade; delay: 700; repeat: false">Our
+                work have the traditional taste with contemporary modern touch,
+                thus we possess a timeless style
+                generating broad market appeal.</h4>
 
-                <div>
-
-                    <div class="img-caption uk-flex uk-flex-center"
-                        uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">
-                        <img width="60%" src="assets/img/img_work.png" alt="">
-                    </div>
-
-                </div>
-
-                <div>
-
-                    <div class="info-caption">
-                        <h2 class="offwhiteC_ f_Bold" uk-scrollspy="cls: uk-animation-fade; delay: 600; repeat: false">
-                            My Website</h2>
-
-                        <h4 class="whiteC_ f_Light" uk-scrollspy="cls: uk-animation-fade; delay: 700; repeat: false">Our
-                            work have the traditional taste with contemporary modern touch,
-                            thus we possess a timeless style
-                            generating broad market appeal.</h4>
-
-                        <a routerLink="/about" class="btn_a offwhiteBG_ py-2 px-3 f_Light nescafeC_ mt-1"
-                            uk-scrollspy="cls: uk-animation-fade; delay: 800; repeat: false">Learn More</a>
-                    </div>
-
-                </div>
-
+            <div class="uk-flex uk-flex-center">
+                <a routerLink="/about" class="btn_a yellowBG_ py-2 px-3 f_Medium blackC_ mt-3"
+                    uk-scrollspy="cls: uk-animation-fade; delay: 800; repeat: false">Learn More</a>
             </div>
+
 
         </div>
 
@@ -207,13 +146,8 @@
     <div class="uk-container">
 
         <div class="header_ text-center">
-
-            <p class="f_Light darkbrownC_ text-center" uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false">
+            <p class="f_Bold blackC_ text-center" uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false">
                 Our Work</p>
-            <div class="uk-flex uk-flex-center" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">
-                <div class="line_ lightbrownBG_"></div>
-            </div>
-
         </div>
 
         <div class="uk-grid-small uk-child-width-1-3@l mt-3" uk-grid
@@ -231,7 +165,7 @@
                     <div class="body_ full_w">
 
                         <div class="p-3">
-                            <h2 class="m-0 whiteC_ f_PlayfairDisplay_ExtraBold mb-1">{{item.name}}</h2>
+                            <h2 class="m-0 yellowC_ f_ExtraBold mb-1">{{item.name}}</h2>
 
                             <div class="uk-grid-small uk-child-width-1-4" uk-grid uk-lightbox="animation: slide">
 
@@ -256,47 +190,9 @@
 
         </div>
 
-        <div hidden class="mt-3" uk-filter="target: .js-filter">
-
-            <div class="uk-grid-small uk-child-width-auto@l uk-flex uk-flex-center" uk-grid
-                uk-scrollspy="cls: uk-animation-fade; target: .nav_box; delay: 200; repeat: false">
-
-                <div>
-                    <div class="uk-active nav_box text-center p-1 px-3 cursor" uk-filter-control><a class="f_SemiBold"
-                            href="#">All</a></div>
-                </div>
-
-                <div *ngFor="let item of placeArr">
-                    <div class="nav_box text-center p-1 px-3 cursor"
-                        attr.uk-filter-control="[data-color='{{item.value}}']">
-                        <a class="f_SemiBold" href="#">{{item.name}}</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="js-filter uk-grid-small uk-child-width-1-4@l uk-text-center" uk-grid
-                uk-scrollspy="cls: uk-animation-fade; target: .bg_; delay: 200; repeat: false"
-                uk-lightbox="animation: slide">
-
-                <div *ngFor="let item of workArr" attr.data-color="{{item.value}}">
-
-                    <div class="bg_ full_w">
-                        <a class="full_w full_h" [href]="'assets/img/work/' + item.value + '/' + item.img">
-                            <img class="full_w full_h" [src]="'assets/img/work/' + item.value + '/' + item.img" alt="">
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
         <div class="text-center mt-3">
 
-            <a routerLink="/work" class="btn_a nescafeBG_ py-2 px-3 f_Medium lightbrownC_"
+            <a routerLink="/work" class="btn_a blackBG_ py-2 px-3 f_Medium yellowC_"
                 uk-scrollspy="cls: uk-animation-fade; delay: 600; repeat: false">Learn More</a>
 
         </div>

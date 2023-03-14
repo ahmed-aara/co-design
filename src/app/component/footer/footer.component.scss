@@ -1,15 +1,13 @@
-footer {
-    background-color: #8B725E;
-}
+
 
 footer .line_ {
-    background-color: #EBA771;
+    background-color: white;
     width: 70%;
     height: 2px;
 }
 
 footer .head_ .line_ {
-    background-color: #EBA771;
+    background-color: white;
     width: 15%;
     height: 2px;
 }
@@ -25,7 +23,7 @@ footer .links_ a::before {
     display: inline-block;
     width: 20px;
     height: 3px;
-    background-color: #EBA771;
+    background-color: #F1C40F;
     margin-right: 10px;
     transition: 0.5s;
 }

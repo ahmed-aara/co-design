@@ -57,7 +57,7 @@
 
 .sec_work .card_ .bg_ .black_screen {
     position: absolute;
-    background-image: linear-gradient(0deg, #45270f, rgba($color: #45270f, $alpha: 0.8), transparent);
+    background-color: rgba($color: #000000, $alpha: 0.6);
     z-index: 2;
 }
 
@@ -78,6 +78,42 @@
 }
 
 .sec_work .card_ .body_ .bg_img img {
+    position: absolute;
+    object-fit: cover;
+}
+
+.modal_detail .bg_ {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.modal_detail .bg_ img {
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.modal_detail .bg_ .black_screen {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+}
+
+.modal_detail .bg_ .body {
+    position: absolute;
+    z-index: 3;
+    bottom: 5%;
+}
+
+.modal_detail .bg_img {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+}
+
+.modal_detail .bg_img img {
     position: absolute;
     object-fit: cover;
 }

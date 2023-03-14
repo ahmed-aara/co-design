@@ -8,11 +8,11 @@
 
     <div class="uk-container">
 
-        <h2 class="f_PlayfairDisplay_ExtraBold darkbrownC_"
+        <h2 class="f_ExtraBold blackC_"
             uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false">Our Service</h2>
-        <h3 class="f_PlayfairDisplay_ExtraBold lightbrownC_"
+        <h3 class="f_ExtraBold yellowC_"
             uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">We Are At Your Service</h3>
-        <div class="lightbrownBG_ line_ mb-3"></div>
+        <div uk-scrollspy="cls: uk-animation-fade; delay: 600; repeat: false" class="blackBG_ line_ mb-3"></div>
 
         <div class="uk-grid-small uk-child-width-1-1@l mt-2" uk-grid
             uk-scrollspy="cls: uk-animation-fade; target: .card_; delay: 400; repeat: false">
@@ -31,14 +31,14 @@
                     </div>
 
                     <div class="uk-width-expand@l">
+                        <!-- [ngStyle]="checkEven(i)?{'right': '-10%'} : {'left': '-10%'}" -->
+                        <p 
+                            class="title_ blackC_ f_Bold">{{item.title}}</p>
 
-                        <p [ngStyle]="checkEven(i)?{'right': '-10%'} : {'left': '-10%'}"
-                            class="title_ lightbrownC_ f_PlayfairDisplay_Bold">{{item.title}}</p>
+                        <div 
+                            class="line_ yellowBG_ m-0"></div>
 
-                        <div [ngStyle]="checkEven(i)?{'right': '-10%'} : {'left': '-10%'}"
-                            class="line_ lightbrownBG_ m-0"></div>
-
-                        <p class="description_ nescafeC_ mt-2 f_PlayfairDisplay_Medium">{{item.description}}</p>
+                        <p class="description_ grayC_ mt-2 f_Medium">{{item.description}}</p>
 
                     </div>
 

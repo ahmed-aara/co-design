@@ -1,11 +1,10 @@
 //sec_1
 .sec_1 {
-    position: relative;
-    height: 100vh;
+    height: 85vh;
 }
 
 .sec_1 .bg_ {
-    position: absolute;
+    position: relative;
     overflow: hidden;
 }
 
@@ -13,63 +12,52 @@
     position: absolute;
     object-fit: cover;
     object-position: center;
+    z-index: 1;
 }
 
 .sec_1 .bg_ .black_screen {
     position: absolute;
-    top: 0%;
-    background: linear-gradient(
-        90deg,
-        rgba($color: #45270f, $alpha: 0.8) 0%,
-        rgba($color: #45270f, $alpha: 0.5) 50%,
-        rgba($color: #45270f, $alpha: 0.3) 100%
-    );
+    background-color: rgba($color: #0e0e0e, $alpha: 0.6);
+    z-index: 2;
 }
 
-.sec_1 .uk-container {
-    position: relative;
+.sec_1 .content_ {
+    position: absolute;
+    bottom: 15%;
+    z-index: 3;
+    width: 100%;
 }
 
-.sec_1 .box .line_ {
-    width: 35%;
+.sec_1 .line_ {
+    width: 40%;
     height: 2px;
 }
 
-.sec_1 .box h2 {
-    font-size: 10rem;
-    line-height: 155px;
+.sec_1 .content_ h2 {
+    font-size: 3rem;
 }
 
-.sec_1 .box h3 {
-    font-size: 5rem;
-    line-height: 70px;
-}
-
-.sec_1 .box p {
-    font-size: 20px;
+.sec_1 .content_ h3 {
+    font-size: 2rem;
 }
 
 //sec_2
 
-.sec_2 {
+.sec_2 .card .bg_ {
     position: relative;
+    background-color: rebeccapurple;
+    height: 200px;
+    overflow: hidden;
 }
 
-.sec_2 .uk-container {
-    z-index: 2;
-}
-
-.sec_2 .card {
-    min-height: 250px;
-}
-
-.sec_2 .line {
+.sec_2 .card .bg_ img {
     position: absolute;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background-color: rgba($color: #45270f, $alpha: 0.1);
-    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sec_2 .card .body_ {
+    min-height: 250px;
 }
 
 //sec_3
@@ -77,45 +65,40 @@
 .sec_3 {
     position: relative;
 }
-
-.sec_3 .uk-container {
-    position: relative;
+.sec_3 .header_ {
+    position: absolute;
     z-index: 1;
-    top: 0;
 }
 
-.sec_3 .wallpaper_box {
-    position: absolute;
+.sec_3 .body_ {
+    position: relative;
     z-index: 2;
-    top: 0;
 }
 
 .sec_3 .bg_ {
     position: relative;
-    height: 100vh;
     overflow: hidden;
+    width: 100%;
+    height: 600px;
 }
 
 .sec_3 .bg_ img {
     position: absolute;
     object-fit: cover;
     object-position: center;
-    z-index: 1;
 }
 
-.sec_3 .bg_ .border_ {
-    position: absolute;
-    width: 80%;
-    border: 7px solid #ebd3c0 !important;
-    height: 80%;
-    z-index: 2;
+.sec_3 .card_service {
+    min-height: 200px;
 }
 
-.sec_3 .placeholder_height {
-    height: 100vh;
+.sec_3 .cards_ {
+    margin-top: 25rem;
+    padding: 0 3rem;
 }
 
 //sec_4
+
 .sec_4 {
     position: relative;
     height: 70vh;
@@ -139,17 +122,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba($color: #8b725e, $alpha: 0.8);
+    background-color: rgba($color: #000000, $alpha: 0.7);
     width: 100%;
     height: 100%;
 }
 
 .sec_4 .caption .img {
     width: 33%;
-}
-
-.sec_4 .caption .img img {
-    width: 100%;
 }
 
 .sec_4 .caption {
@@ -194,7 +173,7 @@
 
 .sec_5 .card_ .bg_ .black_screen {
     position: absolute;
-    background-image: linear-gradient(0deg, #45270f, rgba($color: #45270f, $alpha: 0.7), transparent);
+    background-color: rgba($color: #000000, $alpha: 0.6);
     z-index: 2;
 }
 
@@ -308,36 +287,29 @@
 @media only screen and (max-width: 767px) {
     //sec_1
     .sec_1 {
-        height: 90vh;
+        height: 88vh;
     }
 
-    .sec_1 .bg_ .black_screen {
-        background: linear-gradient(
-            0deg,
-            rgba($color: #45270f, $alpha: 0.8) 0%,
-            rgba($color: #45270f, $alpha: 0.5) 50%,
-            rgba($color: #45270f, $alpha: 0.3) 100%
-        );
+    .sec_1 .content_ {
+        bottom: 10%;
     }
 
-    .sec_1 .box h2 {
-        font-size: 4rem;
-        line-height: 50px;
+    .sec_1 .content_ h2 {
+        font-size: 2.5rem;
     }
 
-    .sec_1 .box h3 {
-        font-size: 3rem;
-        line-height: unset;
+    .sec_1 .content_ h3 {
+        font-size: 1.1rem;
     }
 
     //sec_3
-
     .sec_3 .bg_ {
-        height: 50vh;
+        height: 400px;
     }
 
-    .sec_3 .placeholder_height {
-        height: 50vh;
+    .sec_3 .cards_ {
+        margin-top: 9rem;
+        padding: 0 1rem;
     }
 }
 

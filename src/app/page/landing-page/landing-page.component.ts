@@ -82,39 +82,40 @@ export class LandingPageComponent implements OnInit {
 
   aboutArr: any = [
     {
+      img: 'assets/img/office_design.jpg',
       title: 'Office Design',
       description: 'When we design offices for businesses and companies.. This means that we design the company\'s interface for receiving customers, and it must be with the highest levels of professionalism required globally'
     },
     {
+      img: 'assets/img/residential_design.jpg',
       title: 'Residential Design',
       description: 'Tranquility.. luxury.. relaxation..It is the method we adopt in designing homes and residential complexes. Your family is the most important thing to you.. so we must take care of what matters to you as well.'
     },
     {
+      img: 'assets/img/commercial_design.jpg',
       title: 'Commercial Design',
       description: 'Attracting customers is what matters to the owners of companies and shops. We always think with you about everything that matters to your business, so we choose the appropriate design for you in an elaborate and professional manner.. We also care about the professionalism of implementation and maintenance.'
     },
   ]
 
   placeArr: any = [
+    {  name: 'Hejoouzati', value: 'hejoouzati', img: 'assets/img/work/hejoouzati/3.jpg', imgs: [] },
     { name: 'Our Office', value: 'office', img: 'assets/img/work/office/3.jpg', imgs: [] },
     { name: 'Al Banoosh', value: 'banoosh', img: 'assets/img/work/banoosh/3.jpg', imgs: [] },
     { name: 'Mandi Man', value: 'mandi-man', img: 'assets/img/work/mandi-man/2.jpg', imgs: [] },
     { name: 'Jabal Ali Mall', value: 'jabal-ali-mall', img: 'assets/img/work/jabal-ali-mall/3.jpg', imgs: [] },
     { name: 'Animal Care', value: 'animal-care', img: 'assets/img/work/animal-care/2.jpg', imgs: [] },
-    { name: 'Dr.K jlt', value: 'clinic-dubai-jlt', img: 'assets/img/work/clinic-dubai-jlt/3.jpg', imgs: [] },
   ]
-
-  workArr: any = []
 
   loading: any = true;
 
   ngOnInit(): void {
-    for (let x = 1; x <= 4; x++) this.placeArr[0].imgs.push({ img: `${x}.jpg`, value: 'office' })
-    for (let x = 1; x <= 4; x++) this.placeArr[1].imgs.push({ img: `${x}.jpg`, value: 'banoosh' })
-    for (let x = 1; x <= 3; x++) this.placeArr[2].imgs.push({ img: `${x}.jpg`, value: 'mandi-man' })
-    for (let x = 1; x <= 4; x++) this.placeArr[3].imgs.push({ img: `${x}.jpg`, value: 'jabal-ali-mall' })
-    for (let x = 1; x <= 4; x++) this.placeArr[4].imgs.push({ img: `${x}.jpg`, value: 'animal-care' })
-    for (let x = 1; x <= 4; x++) this.placeArr[5].imgs.push({ img: `${x}.jpg`, value: 'clinic-dubai-jlt' })
+    for (let x = 1; x <= 4; x++) this.placeArr[0].imgs.push({ img: `${x}.jpg`, value: 'hejoouzati' })
+    for (let x = 1; x <= 4; x++) this.placeArr[1].imgs.push({ img: `${x}.jpg`, value: 'office' })
+    for (let x = 1; x <= 4; x++) this.placeArr[2].imgs.push({ img: `${x}.jpg`, value: 'banoosh' })
+    for (let x = 1; x <= 3; x++) this.placeArr[3].imgs.push({ img: `${x}.jpg`, value: 'mandi-man' })
+    for (let x = 1; x <= 4; x++) this.placeArr[4].imgs.push({ img: `${x}.jpg`, value: 'jabal-ali-mall' })
+    for (let x = 1; x <= 4; x++) this.placeArr[5].imgs.push({ img: `${x}.jpg`, value: 'animal-care' })
 
     setTimeout(() => {
       this.loading = false

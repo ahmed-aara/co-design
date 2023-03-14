@@ -30,7 +30,7 @@ export class NavBarComponent implements OnInit {
         const urlDelimitators = new RegExp(/[?//,;&:#$+=]/);
         let currentUrlPath = event.url.slice(1).split(urlDelimitators)[0];
 
-        var route = ['', 'test']
+        var route:any = []
         for (var i = 0; i <= route.length; i++) {
           if (route[i] != currentUrlPath) {
             this.option = true

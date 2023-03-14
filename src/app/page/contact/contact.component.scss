@@ -11,14 +11,13 @@
 .sec_contact .card_ .line_ {
     width: 0%;
     height: 0px;
-    background-color: #45270f;
+    background-color: #222222;
     margin: 0px 0px;
     transition: 0.5s;
 }
 
 .sec_contact .card_ p {
     font-size: 13px;
-    color: #45270f !important;
 }
 
 .sec_contact .card_:hover {
@@ -28,20 +27,20 @@
 .sec_contact .card_:hover .line_ {
     width: 20%;
     height: 2px;
-    background-color: #45270f;
+    background-color: #f1c40f;
     margin: 10px 0px;
 }
 
 .sec_contact .uk-input,
 .sec_contact .uk-textarea {
-    background-color: #ebd2bf !important;
+    background-color: #FFFFFF !important;
 }
 
 .sec_contact .uk-input::placeholder,
 .sec_contact .uk-textarea::placeholder {
-    color: #8b725e !important;
+    color: #525252 !important;
 }
 
 .sec_contact .btn {
-    background-color: #8b725e;
+   font-size: 20px;
 }
