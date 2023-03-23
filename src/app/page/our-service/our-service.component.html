@@ -8,10 +8,10 @@
 
     <div class="uk-container">
 
-        <h2 class="f_ExtraBold blackC_"
-            uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false">Our Service</h2>
-        <h3 class="f_ExtraBold yellowC_"
-            uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">We Are At Your Service</h3>
+        <h2 class="f_ExtraBold blackC_" uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false">Our Service
+        </h2>
+        <h3 class="f_ExtraBold yellowC_" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">We Are At Your
+            Service</h3>
         <div uk-scrollspy="cls: uk-animation-fade; delay: 600; repeat: false" class="blackBG_ line_ mb-3"></div>
 
         <div class="uk-grid-small uk-child-width-1-1@l mt-2" uk-grid
@@ -32,11 +32,9 @@
 
                     <div class="uk-width-expand@l">
                         <!-- [ngStyle]="checkEven(i)?{'right': '-10%'} : {'left': '-10%'}" -->
-                        <p 
-                            class="title_ blackC_ f_Bold">{{item.title}}</p>
+                        <p class="title_ blackC_ f_Bold">{{item.title}}</p>
 
-                        <div 
-                            class="line_ yellowBG_ m-0"></div>
+                        <div class="line_ yellowBG_ m-0"></div>
 
                         <p class="description_ grayC_ mt-2 f_Medium">{{item.description}}</p>
 
@@ -44,6 +42,29 @@
 
                 </div>
 
+            </div>
+
+        </div>
+
+        <div class="approvale_ pt-5 pb-2">
+
+            <h3 class="f_Bold" uk-scrollspy="cls: uk-animation-fade; delay: 400; repeat: false">APPROVALE</h3>
+            <div class="line_ yellowBG_ mb-2" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false"></div>
+
+            <h4 class="grayC_" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">With our authorization
+                and experience, we can provide comprehensive support to our
+                clients from start to
+                finish. We are equipped to handle all necessary approvals and requirements for projects, ensuring a
+                seamless and hassle-free process. Our expertise and professionalism have earned us a reputation as a
+                trusted and reliable partner in the industry. we havefull authorization from various government
+                departments in Dubai, including DEWA, Dubai Civil Defence, Dubai Municipality, and Dubai Development
+                Authority</h4>
+            <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@l mt-3" uk-grid
+                uk-scrollspy="cls: uk-animation-fade; target: .card_; delay: 400; repeat: false">
+
+                <div class="card_" *ngFor="let item of [1,2,3,4]">
+                    <img [src]="'assets/img/service/approvale-' +  item+ '.png'" alt="">
+                </div>
             </div>
 
         </div>

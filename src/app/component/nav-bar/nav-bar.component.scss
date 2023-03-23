@@ -70,6 +70,30 @@ nav .uk-navbar-nav a.uk-active {
     margin-right: 30px;
 }
 
+.animation_box {
+	animation-name: color-transition;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+
+@keyframes color-transition {
+	0% {
+		background-color: #4C6085;
+	}
+	33% {
+		background-color: #80D39B;
+	}
+	66% {
+		background-color: #BE3E82;
+	}
+	100% {
+		background-color: #4C6085;
+	}
+}
+
 /*responsive*********************************************/
 
 /*

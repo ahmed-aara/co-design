@@ -48,6 +48,16 @@
     width: 30%;
 }
 
+.sec_service .approvale_ .line_ {
+    width: 10%;
+    height: 4px;
+}
+
+.sec_service .approvale_ h3 {
+    font-size: 2rem;
+    line-height: 0.1rem;
+}
+
 /*responsive*********************************************/
 
 /*
@@ -120,6 +130,9 @@
     .sec_service .line_ {
         left: 0 !important;
         right: 0 !important;
+    }
+    .sec_service .approvale_ .line_ {
+        width: 40%;
     }
 }
 

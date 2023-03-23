@@ -53,7 +53,7 @@
             </div>
 
             <div class="uk-width-1-1@l" uk-scrollspy="cls: uk-animation-fade; delay: 600; repeat: false">
-                <google-map height="250px" width="100%" [center]="center" [zoom]="zoom">
+                <google-map height="350px" width="100%" [center]="center" [zoom]="zoom">
                     <map-marker *ngFor="let marker of markers" [position]="marker.position" [label]="marker.label">
                     </map-marker>
                 </google-map>

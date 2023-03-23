@@ -100,22 +100,22 @@ export class LandingPageComponent implements OnInit {
 
   placeArr: any = [
     {  name: 'Hejoouzati', value: 'hejoouzati', img: 'assets/img/work/hejoouzati/3.jpg', imgs: [] },
-    { name: 'Our Office', value: 'office', img: 'assets/img/work/office/3.jpg', imgs: [] },
-    { name: 'Al Banoosh', value: 'banoosh', img: 'assets/img/work/banoosh/3.jpg', imgs: [] },
-    { name: 'Mandi Man', value: 'mandi-man', img: 'assets/img/work/mandi-man/2.jpg', imgs: [] },
+    { name: 'Al Banoosh Khawaneej', value: 'banoosh-khawaneej', img: 'assets/img/work/banoosh-khawaneej/3.jpg', imgs: [] },
+    { name: 'Mandi Man', value: 'mandi-man', img: 'assets/img/work/mandi-man/1.jpg', imgs: [] },
     { name: 'Jabal Ali Mall', value: 'jabal-ali-mall', img: 'assets/img/work/jabal-ali-mall/3.jpg', imgs: [] },
-    { name: 'Animal Care', value: 'animal-care', img: 'assets/img/work/animal-care/2.jpg', imgs: [] },
+    { name: 'Dr.K Clinic', value: 'clinic-dubai-jlt', img: 'assets/img/work/clinic-dubai-jlt/3.jpg', imgs: [] },
+    { name: 'Dandanah cafe', value: 'dandanah-cafe', img: 'assets/img/work/dandanah-cafe/3.jpg', imgs: [] },
   ]
 
   loading: any = true;
 
   ngOnInit(): void {
     for (let x = 1; x <= 4; x++) this.placeArr[0].imgs.push({ img: `${x}.jpg`, value: 'hejoouzati' })
-    for (let x = 1; x <= 4; x++) this.placeArr[1].imgs.push({ img: `${x}.jpg`, value: 'office' })
-    for (let x = 1; x <= 4; x++) this.placeArr[2].imgs.push({ img: `${x}.jpg`, value: 'banoosh' })
-    for (let x = 1; x <= 3; x++) this.placeArr[3].imgs.push({ img: `${x}.jpg`, value: 'mandi-man' })
-    for (let x = 1; x <= 4; x++) this.placeArr[4].imgs.push({ img: `${x}.jpg`, value: 'jabal-ali-mall' })
-    for (let x = 1; x <= 4; x++) this.placeArr[5].imgs.push({ img: `${x}.jpg`, value: 'animal-care' })
+    for (let x = 1; x <= 4; x++) this.placeArr[1].imgs.push({ img: `${x}.jpg`, value: 'banoosh-khawaneej' })
+    for (let x = 1; x <= 3; x++) this.placeArr[2].imgs.push({ img: `${x}.jpg`, value: 'mandi-man' })
+    for (let x = 1; x <= 4; x++) this.placeArr[3].imgs.push({ img: `${x}.jpg`, value: 'jabal-ali-mall' })
+    for (let x = 1; x <= 3; x++) this.placeArr[4].imgs.push({ img: `${x}.jpg`, value: 'clinic-dubai-jlt' })
+    for (let x = 1; x <= 4; x++) this.placeArr[5].imgs.push({ img: `${x}.jpg`, value: 'dandanah-cafe' })
 
     setTimeout(() => {
       this.loading = false
